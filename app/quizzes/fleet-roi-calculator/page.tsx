@@ -2,8 +2,20 @@ import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
 
 export const metadata: Metadata = {
-  title: 'Fleet PDR ROI Calculator',
+  title: 'Fleet PDR ROI Calculator | Business Value Analysis',
   description: 'Calculate the return on investment for PDR services in your commercial fleet. See how professional dent repair impacts vehicle value and brand image.',
+  openGraph: {
+    title: 'Fleet PDR ROI Calculator | Business Value Analysis',
+    description: 'Calculate the ROI for PDR services in your commercial fleet.',
+    type: 'website',
+    siteName: 'DentAdvisor',
+    url: 'https://dentadvisor.org/quizzes/fleet-roi-calculator',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fleet PDR ROI Calculator',
+    description: 'Calculate the ROI for PDR services in your commercial fleet.',
+  },
 }
 
 const questions = [

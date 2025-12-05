@@ -2,8 +2,20 @@ import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
 
 export const metadata: Metadata = {
-  title: 'How Dents Affect Your Car\'s Value',
+  title: 'How Dents Affect Your Car\'s Value | ROI Calculator',
   description: 'Calculate how much dents are hurting your vehicle\'s resale value and see the ROI of PDR repair.',
+  openGraph: {
+    title: 'How Dents Affect Your Car\'s Value | ROI Calculator',
+    description: 'Calculate how much dents are hurting your resale value and see the ROI of repair.',
+    type: 'website',
+    siteName: 'DentAdvisor',
+    url: 'https://dentadvisor.org/quizzes/dent-value-impact',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Dents Affect Your Car\'s Value',
+    description: 'Calculate how much dents are hurting your resale value and see the ROI of repair.',
+  },
 }
 
 const questions = [

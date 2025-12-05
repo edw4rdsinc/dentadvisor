@@ -2,8 +2,20 @@ import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
 
 export const metadata: Metadata = {
-  title: 'Classic Car PDR Compatibility Check',
+  title: 'Classic Car PDR Compatibility Check | Is It Safe?',
   description: 'Is your classic, vintage, or collector car a good candidate for paintless dent repair? Take our quiz to find out if PDR is safe for your classic.',
+  openGraph: {
+    title: 'Classic Car PDR Compatibility Check | Is It Safe?',
+    description: 'Is your classic or collector car a good candidate for PDR? Find out if it\'s safe.',
+    type: 'website',
+    siteName: 'DentAdvisor',
+    url: 'https://dentadvisor.org/quizzes/classic-car-compatibility',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Classic Car PDR Compatibility Check',
+    description: 'Is your classic or collector car a good candidate for PDR? Find out if it\'s safe.',
+  },
 }
 
 const questions = [

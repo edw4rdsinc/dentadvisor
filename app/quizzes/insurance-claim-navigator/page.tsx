@@ -2,8 +2,20 @@ import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
 
 export const metadata: Metadata = {
-  title: 'Insurance Claim Navigator for Dent Repair',
+  title: 'Insurance Claim Navigator | File or Pay Out-of-Pocket?',
   description: 'Should you file an insurance claim for your dent damage? Our quiz helps you decide if claiming is worth it based on deductibles, damage extent, and more.',
+  openGraph: {
+    title: 'Insurance Claim Navigator | File or Pay Out-of-Pocket?',
+    description: 'Should you file an insurance claim for dent damage? Find out if claiming is worth it.',
+    type: 'website',
+    siteName: 'DentAdvisor',
+    url: 'https://dentadvisor.org/quizzes/insurance-claim-navigator',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Insurance Claim Navigator',
+    description: 'Should you file an insurance claim for dent damage? Find out if claiming is worth it.',
+  },
 }
 
 const questions = [

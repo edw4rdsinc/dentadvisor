@@ -2,8 +2,20 @@ import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
 
 export const metadata: Metadata = {
-  title: 'PDR vs Body Shop Calculator',
+  title: 'PDR vs Body Shop Calculator | Free Comparison Tool',
   description: 'Compare paintless dent repair vs traditional body shop repair. Get personalized cost estimates and recommendations for your vehicle damage.',
+  openGraph: {
+    title: 'PDR vs Body Shop Calculator | Free Comparison Tool',
+    description: 'Compare PDR vs body shop repair. Get personalized recommendations for your vehicle damage.',
+    type: 'website',
+    siteName: 'DentAdvisor',
+    url: 'https://dentadvisor.org/quizzes/pdr-vs-body-shop',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'PDR vs Body Shop Calculator',
+    description: 'Compare PDR vs body shop repair and get personalized recommendations.',
+  },
 }
 
 const questions = [

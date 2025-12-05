@@ -2,8 +2,20 @@ import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
 
 export const metadata: Metadata = {
-  title: 'Is My PDR Technician Qualified?',
+  title: 'Is My PDR Technician Qualified? | Free Checklist',
   description: 'Evaluate your PDR technician or shop with our qualification checklist. Learn the red flags and green flags that indicate quality.',
+  openGraph: {
+    title: 'Is My PDR Technician Qualified? | Free Checklist',
+    description: 'Evaluate your PDR technician with our professional qualification checklist.',
+    type: 'website',
+    siteName: 'DentAdvisor',
+    url: 'https://dentadvisor.org/quizzes/technician-qualified',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Is My PDR Technician Qualified?',
+    description: 'Evaluate your PDR technician with our professional qualification checklist.',
+  },
 }
 
 const questions = [

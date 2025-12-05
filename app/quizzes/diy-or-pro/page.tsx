@@ -4,6 +4,18 @@ import Quiz from '@/components/Quiz'
 export const metadata: Metadata = {
   title: 'DIY or Pro? Dent Repair Decision Guide',
   description: 'Should you attempt DIY dent repair or hire a professional? Take our quiz to get personalized advice based on your damage and skill level.',
+  openGraph: {
+    title: 'DIY or Pro? Dent Repair Decision Guide',
+    description: 'Should you attempt DIY dent repair or hire a professional? Get personalized advice.',
+    type: 'website',
+    siteName: 'DentAdvisor',
+    url: 'https://dentadvisor.org/quizzes/diy-or-pro',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'DIY or Pro? Dent Repair Decision Guide',
+    description: 'Should you attempt DIY dent repair or hire a professional?',
+  },
 }
 
 const questions = [

@@ -2,8 +2,20 @@ import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
 
 export const metadata: Metadata = {
-  title: 'Can My Dent Be Fixed with PDR?',
+  title: 'Can My Dent Be Fixed with PDR? | Free Assessment',
   description: 'Take our free assessment to find out if paintless dent repair is right for your vehicle damage. Get personalized recommendations in 2-3 minutes.',
+  openGraph: {
+    title: 'Can My Dent Be Fixed with PDR? | Free Assessment',
+    description: 'Take our free assessment to find out if paintless dent repair is right for your vehicle damage.',
+    type: 'website',
+    siteName: 'DentAdvisor',
+    url: 'https://dentadvisor.org/quizzes/can-my-dent-be-fixed',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Can My Dent Be Fixed with PDR?',
+    description: 'Take our free assessment to find out if PDR is right for your vehicle damage.',
+  },
 }
 
 const questions = [

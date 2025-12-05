@@ -2,8 +2,20 @@ import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
 
 export const metadata: Metadata = {
-  title: 'Hail Damage Severity Assessment',
+  title: 'Hail Damage Severity Assessment | Free Calculator',
   description: 'Assess your vehicle\'s hail damage severity and get guidance on insurance claims, repair costs, and next steps.',
+  openGraph: {
+    title: 'Hail Damage Severity Assessment | Free Calculator',
+    description: 'Assess your hail damage severity and get guidance on insurance claims and repair options.',
+    type: 'website',
+    siteName: 'DentAdvisor',
+    url: 'https://dentadvisor.org/quizzes/hail-damage-assessment',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hail Damage Severity Assessment',
+    description: 'Assess your hail damage and get guidance on insurance claims and repairs.',
+  },
 }
 
 const questions = [

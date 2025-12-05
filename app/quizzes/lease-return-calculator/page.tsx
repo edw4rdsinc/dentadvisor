@@ -2,8 +2,20 @@ import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
 
 export const metadata: Metadata = {
-  title: 'Lease Return Damage Calculator',
+  title: 'Lease Return Damage Calculator | Save on Fees',
   description: 'Calculate potential lease-end charges for vehicle damage and see how PDR can save you money before your lease inspection.',
+  openGraph: {
+    title: 'Lease Return Damage Calculator | Save on Fees',
+    description: 'Calculate potential lease-end charges and see how PDR can save you money.',
+    type: 'website',
+    siteName: 'DentAdvisor',
+    url: 'https://dentadvisor.org/quizzes/lease-return-calculator',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lease Return Damage Calculator',
+    description: 'Calculate potential lease-end charges and see how PDR can save you money.',
+  },
 }
 
 const questions = [
