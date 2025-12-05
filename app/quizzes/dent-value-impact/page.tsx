@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
+import QuizShareEmbed from '@/components/QuizShareEmbed'
 
 export const metadata: Metadata = {
   title: 'How Dents Affect Your Car\'s Value | ROI Calculator',
@@ -138,9 +139,14 @@ export default function DentValueImpactQuiz() {
       <section className="bg-gradient-to-br from-emerald-600 to-emerald-800 text-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">How Much Are Dents Hurting Your Car&apos;s Value?</h1>
-          <p className="text-lg text-emerald-100">
+          <p className="text-lg text-emerald-100 mb-6">
             Calculate the resale impact and see the ROI of PDR repair.
           </p>
+          <QuizShareEmbed
+            quizSlug="dent-value-impact"
+            quizTitle="How Dents Affect Your Car's Value"
+            quizDescription="Calculate how much dents are hurting your resale value and see the ROI of repair."
+          />
         </div>
       </section>
 

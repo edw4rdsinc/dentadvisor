@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
+import QuizShareEmbed from '@/components/QuizShareEmbed'
 
 export const metadata: Metadata = {
   title: 'DIY or Pro? Dent Repair Decision Guide',
@@ -149,9 +150,14 @@ export default function DIYOrProQuiz() {
       <section className="bg-gradient-to-br from-amber-500 to-amber-700 text-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">DIY or Pro? Dent Repair Decision Guide</h1>
-          <p className="text-lg text-amber-100">
+          <p className="text-lg text-amber-100 mb-6">
             Find out if you should attempt DIY repair or call a professional.
           </p>
+          <QuizShareEmbed
+            quizSlug="diy-or-pro"
+            quizTitle="DIY or Pro? Dent Repair Decision Guide"
+            quizDescription="Should you attempt DIY dent repair or hire a professional?"
+          />
         </div>
       </section>
 

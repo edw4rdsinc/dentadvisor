@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
+import QuizShareEmbed from '@/components/QuizShareEmbed'
 
 export const metadata: Metadata = {
   title: 'PDR vs Body Shop Calculator | Free Comparison Tool',
@@ -138,9 +139,14 @@ export default function PDRvsBodyShopQuiz() {
       <section className="bg-gradient-to-br from-[var(--accent-500)] to-[var(--accent-600)] text-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">PDR vs Body Shop Calculator</h1>
-          <p className="text-lg text-white/90">
+          <p className="text-lg text-white/90 mb-6">
             Compare your options and find the best repair method for your situation.
           </p>
+          <QuizShareEmbed
+            quizSlug="pdr-vs-body-shop"
+            quizTitle="PDR vs Body Shop Calculator"
+            quizDescription="Compare PDR vs body shop repair and get personalized recommendations."
+          />
         </div>
       </section>
 

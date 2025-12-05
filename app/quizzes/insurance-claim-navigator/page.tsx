@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
+import QuizShareEmbed from '@/components/QuizShareEmbed'
 
 export const metadata: Metadata = {
   title: 'Insurance Claim Navigator | File or Pay Out-of-Pocket?',
@@ -149,9 +150,14 @@ export default function InsuranceClaimQuiz() {
       <section className="bg-gradient-to-br from-sky-600 to-sky-800 text-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">Insurance Claim Navigator</h1>
-          <p className="text-lg text-sky-100">
+          <p className="text-lg text-sky-100 mb-6">
             Decide if filing a claim is worth it for your dent damage.
           </p>
+          <QuizShareEmbed
+            quizSlug="insurance-claim-navigator"
+            quizTitle="Insurance Claim Navigator"
+            quizDescription="Should you file an insurance claim for dent damage? Find out if claiming is worth it."
+          />
         </div>
       </section>
 

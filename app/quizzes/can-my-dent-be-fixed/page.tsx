@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
+import QuizShareEmbed from '@/components/QuizShareEmbed'
 
 export const metadata: Metadata = {
   title: 'Can My Dent Be Fixed with PDR? | Free Assessment',
@@ -151,9 +152,14 @@ export default function CanMyDentBeFixedQuiz() {
       <section className="bg-gradient-to-br from-[var(--dent-700)] to-[var(--dent-900)] text-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">Can My Dent Be Fixed with PDR?</h1>
-          <p className="text-lg text-[var(--dent-100)]">
+          <p className="text-lg text-[var(--dent-100)] mb-6">
             Answer 7 quick questions to find out if paintless dent repair is right for your vehicle.
           </p>
+          <QuizShareEmbed
+            quizSlug="can-my-dent-be-fixed"
+            quizTitle="Can My Dent Be Fixed with PDR?"
+            quizDescription="Take our free assessment to find out if PDR is right for your vehicle damage."
+          />
         </div>
       </section>
 

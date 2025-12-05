@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
+import QuizShareEmbed from '@/components/QuizShareEmbed'
 
 export const metadata: Metadata = {
   title: 'Classic Car PDR Compatibility Check | Is It Safe?',
@@ -149,9 +150,14 @@ export default function ClassicCarQuiz() {
       <section className="bg-gradient-to-br from-rose-600 to-rose-800 text-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">Classic Car PDR Compatibility Check</h1>
-          <p className="text-lg text-rose-100">
+          <p className="text-lg text-rose-100 mb-6">
             Find out if paintless dent repair is safe for your collector vehicle.
           </p>
+          <QuizShareEmbed
+            quizSlug="classic-car-compatibility"
+            quizTitle="Classic Car PDR Compatibility Check"
+            quizDescription="Is your classic or collector car a good candidate for PDR? Find out if it's safe."
+          />
         </div>
       </section>
 

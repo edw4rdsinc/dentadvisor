@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
+import QuizShareEmbed from '@/components/QuizShareEmbed'
 
 export const metadata: Metadata = {
   title: 'Is My PDR Technician Qualified? | Free Checklist',
@@ -149,9 +150,14 @@ export default function TechnicianQualifiedQuiz() {
       <section className="bg-gradient-to-br from-[var(--steel-700)] to-[var(--steel-900)] text-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">Is My PDR Technician Qualified?</h1>
-          <p className="text-lg text-[var(--steel-300)]">
+          <p className="text-lg text-[var(--steel-300)] mb-6">
             Evaluate your technician with our professional qualification checklist.
           </p>
+          <QuizShareEmbed
+            quizSlug="technician-qualified"
+            quizTitle="Is My PDR Technician Qualified?"
+            quizDescription="Evaluate your PDR technician with our professional qualification checklist."
+          />
         </div>
       </section>
 

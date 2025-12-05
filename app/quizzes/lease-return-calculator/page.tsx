@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
+import QuizShareEmbed from '@/components/QuizShareEmbed'
 
 export const metadata: Metadata = {
   title: 'Lease Return Damage Calculator | Save on Fees',
@@ -149,9 +150,14 @@ export default function LeaseReturnQuiz() {
       <section className="bg-gradient-to-br from-purple-600 to-purple-800 text-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">Lease Return Damage Calculator</h1>
-          <p className="text-lg text-purple-100">
+          <p className="text-lg text-purple-100 mb-6">
             See how much PDR could save you before your lease inspection.
           </p>
+          <QuizShareEmbed
+            quizSlug="lease-return-calculator"
+            quizTitle="Lease Return Damage Calculator"
+            quizDescription="Calculate potential lease-end charges and see how PDR can save you money."
+          />
         </div>
       </section>
 

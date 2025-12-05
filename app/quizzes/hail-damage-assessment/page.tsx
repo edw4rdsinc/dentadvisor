@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Quiz from '@/components/Quiz'
+import QuizShareEmbed from '@/components/QuizShareEmbed'
 
 export const metadata: Metadata = {
   title: 'Hail Damage Severity Assessment | Free Calculator',
@@ -149,9 +150,14 @@ export default function HailDamageQuiz() {
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">Hail Damage Severity Assessment</h1>
-          <p className="text-lg text-blue-100">
+          <p className="text-lg text-blue-100 mb-6">
             Evaluate your hail damage and get guidance on insurance claims and repair options.
           </p>
+          <QuizShareEmbed
+            quizSlug="hail-damage-assessment"
+            quizTitle="Hail Damage Severity Assessment"
+            quizDescription="Assess your hail damage and get guidance on insurance claims and repairs."
+          />
         </div>
       </section>
 
